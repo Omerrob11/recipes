@@ -1,0 +1,138 @@
+/* Color Pallete */
+/* Background - fffcf9 */
+/* 
+Font - 25171a
+*/
+
+/* General Styles */
+body {
+  background-color: #fffcf9;
+  color: #25171a;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo {
+  font-size: 64px;
+  color: #cc3f0c;
+}
+
+/* Buttons */
+
+.img {
+  width: 200px;
+}
+
+/* Header */
+
+.header {
+  /* border: 2px solid red; */
+  padding-top: 48px;
+}
+.logo {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header {
+  animation: 2.5s ease-out 0s 1 slideInFromTop;
+}
+
+/* Gif */
+
+.gif-container {
+  border: 2px solid blue;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.gif {
+  width: 400px;
+  max-width: 400px;
+  height: auto;
+  animation-name: gif;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+}
+
+@keyframes gif {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Recipes */
+.recipes-container {
+  border: 2px solid red;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.single-recipe {
+  border: 2px solid green;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.meatball-container {
+  animation: 3s ease-out 0s 1 slidFromRight;
+  animation-delay: 5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.egg-recipe-container {
+  animation: 3s ease-out 0s 1 slidFromLeft;
+  animation-delay: 5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
