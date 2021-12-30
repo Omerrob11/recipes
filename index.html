@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -12,30 +13,81 @@
     <div class="wrapper">
       <header>
         <div class="header">
-          <h1 class="logo">Odin Recipes</h1>
+          <h1 class="logo">
+            Odin <span class="underline--magical">Recipes</span>
+          </h1>
         </div>
       </header>
       <main>
         <div class="gif-container">
-          <img class="gif" src="./img/food_gif.webp" alt="pepole-served-food" />
+          <img class="gif" src="./img/eating.gif" alt="pepole-served-food" />
         </div>
 
-        <div class="recipes-container">
-          <div class="single-recipe egg-recipe-container">
-            <img class="img" src="img/eggs-img.jpg" alt="" />
-          </div>
-          <div class="single-recipe meatball-container">
-            <img class="img" src="img/meat-balls.jpg" alt="" />
+        <div class="recipes-wrapper">
+          <h2 class="recipes-title">It's time to eat some food!</h2>
+          <div class="recipes-container">
+            <div class="single-recipe egg-recipe-container">
+              <a href="core-recipes/eggs.html">
+                <img
+                  class="img egg-img"
+                  src="img/eggs-img.jpg"
+                  alt="plate-of-eggs"
+                />
+                <div class="recipe-text egg-recipe-text">
+                  <h2 class="recipe-title">Cocktail Meatballs</h2>
+                  <p class="recipe-info">
+                    A twist on the grape jelly cocktail meatballs that everybody
+                    loves.
+                    <br />
+                    This recipe uses apricot preserves, but feel free to use
+                    grape, orange marmalade, or even cranberry sauce - they're
+                    all delicious! Try different flavors of barbecue sauce too!
+                    <br />
+                    These make the perfect party appetizer, especially when
+                    you're low on time!
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="single-recipe meatball-container">
+              <a href="core-recipes/meatball.html">
+                <img
+                  class="img meatball-img"
+                  src="img/meat-balls.jpg"
+                  alt="meatball-in-plate"
+                />
+                <div class="recipe-text egg-recipe text">
+                  <h2 class="recipe-title">Classic Savory Deviled Eggs</h2>
+                  <p class="recipe-info">
+                    Hard-cooked eggs are stuffed with a creamy blend of
+                    mayonnaise, Dijon mustard and rice wine vinegar.
+                    <br />Fresh dill and garlic powder add a delightful flavor.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </main>
-
-      <footer>
-        <p>Recipe project: Omer Miloh</p>
-        <div class="odin-logo">
-          <img src="" alt="" />
-        </div>
-      </footer>
     </div>
+    <footer>
+      <p class="owner">Recipe project: Omer Miloh</p>
+      <div class="odin-logo">
+        <img src="img/odin_logo.svg" alt="" />
+        <p class="logo-text">The Odin Project</p>
+      </div>
+    </footer>
   </body>
 </html>
+
+<!-- 
+  Header: gap between top: 16px [v]
+
+  Gif; gap between each side of the gif: 32px [v]
+
+  Recipes container: gapp between each element: 32px [v]
+
+  images: gap between footer: 32px [v]
+
+  
+ -->
