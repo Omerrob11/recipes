@@ -8,6 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -27,7 +33,7 @@
           <h2 class="recipes-title">It's time to eat some food!</h2>
           <div class="recipes-container">
             <div class="single-recipe egg-recipe-container">
-              <a href="core-recipes/eggs.html">
+              <a href="core-recipes/eggs.html" class="recipe-link">
                 <img
                   class="img egg-img"
                   src="img/eggs-img.jpg"
@@ -50,7 +56,7 @@
               </a>
             </div>
             <div class="single-recipe meatball-container">
-              <a href="core-recipes/meatball.html">
+              <a href="core-recipes/meatball.html" class="recipe-link">
                 <img
                   class="img meatball-img"
                   src="img/meat-balls.jpg"
@@ -71,7 +77,7 @@
       </main>
     </div>
     <footer>
-      <p class="owner">Recipe project: Omer Miloh</p>
+      <p class="owner">&copy; Recipe project: Omer Miloh</p>
       <div class="odin-logo">
         <img src="img/odin_logo.svg" alt="" />
         <p class="logo-text">The Odin Project</p>
@@ -81,13 +87,11 @@
 </html>
 
 <!-- 
-  Header: gap between top: 16px [v]
-
-  Gif; gap between each side of the gif: 32px [v]
-
-  Recipes container: gapp between each element: 32px [v]
-
-  images: gap between footer: 32px [v]
-
   
+- Change animation timing [v]
+- change font [V]
+- change font size in footer [v]
+- add transformy transition on hover to images [V]
+- Remove image border [v]
+
  -->
